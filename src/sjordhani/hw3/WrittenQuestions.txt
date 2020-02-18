@@ -1,0 +1,72 @@
+<<Your Name Here>>
+HW3
+Written Questions
+
+Q1. HeapSort Empirical Evaluation 
+
+
+		
+				N	MaxComp	MaxExch
+				16	 21		7
+				32	 46		17
+				64	 108	45
+				128	 237	91
+				256	 472	190
+				512	 942	367	
+		
+		
+  Once running the Question1.java, I have come to the conclusions that the empirical results support the
+  hypothesis in question. After further analysis, the heap that is sink-based uses less than 2N comparisons
+  and less than N exchanges to create a heap with N items. Because the heap is sink-based, we know that 
+  less is called twice while the total number of exchanges can be at most N because there is at most 
+  two compares per each exchange.  
+
+Q2. Recurrence Relationship
+---------------------------
+
+Determine C(N) for BinaryArraySearch and determine the upper bound (worst case)
+and the lower bound (best case).
+
+Base Case:                  This also remains the best case (lower bound) 
+		C(1) = 1  
+		
+		C(N) = C(N/2)+1
+		C(N/2) = C(N/4)+1
+		C(N) = (C(N/4)+1)+1
+		C(N) = ((C(N/8)+1)+1)+1
+		C(N) = C(N/2^k)+k
+		C(N) = logN + C(1)
+		C(N) = logN + 1      Worst Case (Upper Bound)
+		 
+
+Q3. Sorted Linked Lists (25 pts)
+--------------------------------
+
+The performance speed of my program is faster than that of Day 12, however 
+it is not significant enough to see a performance difference. 
+   
+Q4. Binary Search Tree (45 pts)
+-------------------------------
+
+3535 leaves in the tree.
+the	7989
+and	4935
+of	4002
+to	3460
+a	2909
+in	2579
+his	2005
+it	2003
+i	1915
+that 1889
+he	1831
+
+
+BONUS QUESTIONS
+
+None yet, but I hope to add a few this week.
+
+
+
+
+
